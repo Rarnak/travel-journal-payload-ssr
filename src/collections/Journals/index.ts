@@ -49,7 +49,7 @@ export const Journals: CollectionConfig = {
     beforeChange: [
       async ({ data, operation }) => {
         if (operation === 'create') {
-          data.createAt = new Date()
+          data.createdAt = new Date()
         }
       },
     ],
